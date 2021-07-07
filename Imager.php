@@ -5,7 +5,7 @@
 /*
 Plugin Name: Imager
 Description: Auto populate image alt from file name on upload | Auto generate and populate image alt on image load on front end
-Version: 1.0.0
+Version: 1.0.1
 Requires at least: >= 5.2
 Tested up to: 5.7.2
 Requires PHP: >= 7.4
