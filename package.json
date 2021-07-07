@@ -1,0 +1,26 @@
+{
+  "name": "imager",
+  "version": "1.0.1",
+  "description": "Wordpress plugin for auto generating image alt attribute",
+  "private": true,
+  "scripts": {
+	"zip": "bestzip imager.zip ../imager/*.php ../imager/Readme.*"
+  },
+  "repository": {
+	"type": "git",
+	"url": "git+https://github.com/viljuska/imager.git"
+  },
+  "keywords": [
+	"wordpress plugin",
+	"image alt"
+  ],
+  "author": "Stefan Jocić",
+  "license": "GPLv2 or later",
+  "bugs": {
+	"url": "https://github.com/viljuska/imager/issues"
+  },
+  "homepage": "https://github.com/viljuska/imager#readme",
+  "devDependencies": {
+	"bestzip": "^2.2.0"
+  }
+}
