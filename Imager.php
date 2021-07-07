@@ -93,7 +93,7 @@ if ( ! class_exists( 'Imager' ) ) {
 		 * @return array|string|string[]|null
 		 */
 		private function cleanImageTitle( string $title ) {
-			return preg_replace( '%\s*[-_\s]+\s*%', ' ', ucwords( strtolower( $title ) ) );
+			return preg_replace( '%\s*[-_\s]+\s*%', ' ', ucwords( strtolower( esc_attr( $title ) ) ) );
 		}
 
 		/**
@@ -103,7 +103,7 @@ if ( ! class_exists( 'Imager' ) ) {
 		 */
 		private function updateImage( int $attachment_id, string $alt, array $args = [] ) {
 			// Set the image Alt-Text
-			update_post_meta( $attachment_id, '_wp_attachment_image_alt', $alt );
+			update_post_meta( $attachment_id, '_wp_attachment_image_alt', esc_attr( $alt ) );
 
 			if ( ! empty( $args ) ) {
 				// Set the image meta (e.g. Title, Excerpt, Content)
